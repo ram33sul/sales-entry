@@ -55,7 +55,7 @@ function InsertPopup({onInsert, onCancel}: {onInsert: ({itemCode, qty}: {itemCod
                 setItemCodeError("Product code doesn't exist")
                 isInvalid = true;
             }
-            if(qty === undefined){
+            if(qty === ''){
                 setQtyError("Quantity is required")
                 isInvalid = true;
 
@@ -63,7 +63,7 @@ function InsertPopup({onInsert, onCancel}: {onInsert: ({itemCode, qty}: {itemCod
                 setQtyError("Quantity must be greater than zero")
                 isInvalid = true;
             }
-            if(rate === undefined){
+            if(rate === ''){
                 setRateError("Rate is required")
                 isInvalid = true;
             } else if(parseFloat(rate) <= 0){
