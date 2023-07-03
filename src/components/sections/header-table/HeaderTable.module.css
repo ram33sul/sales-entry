@@ -1,0 +1,27 @@
+.container {
+    height: fit-content;
+    border: 1px solid rgba(128, 128, 128, 1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 30px 10vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-sub {
+    display: flex;;
+    margin: auto;
+    gap: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .section {
+        padding: 15px 5vw;
+    }
+}

@@ -1,0 +1,49 @@
+.container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table {
+    min-width: 100%;
+    width: fit-content;
+}
+
+thead > tr {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.total-wrapper {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.total-text {
+    padding: 5px 10px;
+}
+
+.total-amount {
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid var(--foreground-color);
+}
+
+@media screen and (max-width: 650px) {
+    .table-wrapper {
+        overflow-x: scroll;
+    }
+}

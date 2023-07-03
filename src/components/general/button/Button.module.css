@@ -1,0 +1,10 @@
+.button {
+    width: 70px;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    border: 0;
+    font-weight: bold;
+    color: var(--background-color);
+}

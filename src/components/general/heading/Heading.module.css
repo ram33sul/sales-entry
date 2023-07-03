@@ -1,0 +1,11 @@
+.container{
+    background-color: cornflowerblue;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--background-color);
+    transition: color 0.5s;
+}

@@ -1,0 +1,55 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: container-animation 0.2s ease;
+}
+
+.wrapper {
+    padding: 50px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    max-width: 90dvw;
+    position: relative;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    color: var(--background-color);
+}
+
+.error {
+    color: red;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space:nowrap;
+    font-size: 12px;
+}
+
+@keyframes container-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
